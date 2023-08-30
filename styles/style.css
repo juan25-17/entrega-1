@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+body {
+    background-color: black;
+    padding: 1rem;
+}
+main {
+    color: white;
+    background-image: url(../assets/logos.jpg);
+}
+
+.cabecera .divPrimero {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.cabecera .divPrimero .divSegundo {
+    width: 9.375rem
+
+
+}
+.titulo{
+    
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.cabecera .divPrimero .divSegundo .imagenHeader {
+    width: 100%
+}
+.divNav .lista {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    margin-top: 3.125rem;
+    
+}
+.divNav .lista a {
+    padding: .25rem;
+    color: white;
+    font-size: 1.875rem;
+    text-decoration: none;
+    border-radius: .625rem;
+}
+.divNav .lista .aInicio {
+    text-decoration: underline
+}
+
+ 
+/*main*/
+
+.sectionInformacion {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgba(6, 5, 5, 0.483);
+    padding: 0.75rem;
+    margin-top: .625rem;
+    border: .25rem;
+    border-radius: .625rem;
+    border-style: groove;
+    }
+.sectionInformacion .subSection {
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 1.875rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(59, 59, 63, 0.223);
+
+    }
+    .sectionInformacion .divParrafo {
+        padding: 1.25rem;
+        background-color:rgba(81, 78, 78, 0.576) ;
+        border: 4px;
+        border-radius: 10px;
+    }
+    .sectionInformacion .arBandas {
+        display: flex;
+        padding: .625rem;
+    }
+
+    .sectionInformacion .colorDiv {
+        background-color: rgba(0, 0, 0, 0.356);
+        padding: 2.5rem;
+        border: 1.25rem;
+        border-radius: .5rem;
+    }
+    .sectionInformacion .arBandas .imagenBanda {
+        width: 6.25rem;
+        height: 7.3125rem;
+        border-radius: .625rem;
+        margin: auto;
+        cursor: pointer;
+    }
+
+
+    .imagenBanda:hover{
+        transform: scale(1.2);
+        
+    }
+    .sectionInformacion .colorDiv .p {
+        padding-left: .625rem;
+    }
+    .cardsInfo {
+        width: 12.5rem;
+        background-color: rgba(220, 220, 220, 0.28);
+        padding-bottom: .625rem;
+        border-width: .3125rem;
+        border-style: solid;
+        overflow: hidden;
+        border-radius: .25rem;
+        margin: auto;
+        cursor: pointer;
+        transition: 2s;
+    }
+    .cardsInfo:hover {
+        transform: scale(1.1);
+        transition: 2s;
+    }
+
+    .imgCard{
+        width: 100%;
+    }
+    .cardsLinea1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        margin-top: 3.125rem;
+        gap: 8px;
+    }
+    .cardH {
+        text-align: center;
+    }
+    .botonDisco {
+        margin-left: .875rem;
+        background-color: black;
+        
+    }
+    .botonDisco a {
+        color: white;
+    }
+    .divTienda {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        margin-top: 3.125rem;
+        gap: 8px;
+    }
+
+    .cardTienda{
+        width: 12.5rem;
+        height: 18.75rem;
+        background-color: rgba(255, 255, 255, 0.774);
+        border: .1875rem;
+        border-radius: .25rem;   
+    }
+
+
+
+    .cardTienda .subCard {
+        color: black;
+        text-align: center;
+        padding: 1.25rem;
+
+    }
+    .botonTienda {
+        background-color: black;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        border-radius: .625rem;
+        margin-left: 1.875rem;    
+    }
+    .botonTienda a{
+        color: white;
+    }
+
+    .containerForm {
+        background-color: rgba(116, 115, 115, 0.7);
+        
+    }
+    .divForm { 
+        padding: 1rem;
+    }
+    .divForm .formInput {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .divFormBoton .botonForm{ 
+        padding: .25rem;
+        width: 50%;      
+        border-radius: .5rem;
+        background-color: aqua;
+
+    }
+    .divFormBoton {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*footer*/
+    .pie .divPie {
+        background-color: black;
+        display: flex;
+        height: 6.25rem;
+        color: white;
+        justify-content: flex-end;
+        
+        
+        
+    }
+    .imgFooter {
+        width: 3.75rem;
+    }
+
+    @media (max-width: 768px){
+
+        .cabecera .divPrimero .divSegundo{  
+            width: 30%;
+        }
+        .titulo {
+            align-items: center;
+            }
+        }
+    
+    @media (max-width: 480px){
+        .cabecera .divPrimero .divSegundo .imagenHeader{   
+            justify-content: space-around;
+        }
+
+        .titulo {
+            align-items: center;
+            font-size: 1.875rem;
+            }
+        .cabecera .divNav ul a  {
+            font-size: 1.5625rem;
+            width: 100%;
+        }
+
+        .sectionInformacion{
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+
+        .sectionInformacion .arBandas{
+            display: flex;
+        }
+        .sectionInformacion .arBandas .p {
+            font-size: .9375rem;
+            background-color: rgba(67, 64, 64, 0.232);
+        }
+        .sectionInformacion .arBandas .imagenBanda{ 
+            width: 9.375rem; 
+            height: 5rem;
+            padding-right: 2.5rem;
+        }
+        .containerForm .divForm {
+        }
+    }
+
+    @media (max-width:320px){  
+        .divNav .lista li  a {
+            font-size: 1rem;
+        }
+        .arBandas {
+            flex-direction: column;
+            align-items: center;
+        }
+        .divTienda{
+            justify-items: center;
+        }
+        .sectionInformacion h2 {
+            text-align: center;
+        }
+
+    }
+
